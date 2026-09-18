@@ -1,4 +1,4 @@
-# 🔍 Interactive Posts Feed
+# 🔍 Flashcard Learning App
 
 > 🚀 **Live Demo:** [Watch the demo in the browser](https://voldy831.github.io/javascript-project-3/)
 
