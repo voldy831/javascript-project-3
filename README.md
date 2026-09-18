@@ -1,3 +1,7 @@
+# 🔍 Interactive Posts Feed
+
+> 🚀 **Live Demo:** [Watch the demo in the browser](https://voldy831.github.io/javascript-project-3/)
+
 # 🃏 Flashcard Learning App
 
 A modular, OOP-driven Vanilla JavaScript web application for creating, managing, and studying flashcard decks with automatic persistence and custom study modes.
