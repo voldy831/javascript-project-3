@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Flashcards</h1>
+            <div class="collection-controls">
+                <select id="collectionSelect"></select>
+                <button id="newCollectionBtn" class="btn-secondary">Новая колода</button>
+            </div>
+        </header>
+
+        <section class="card-creator">
+            <div class="input-group">
+                <input type="text" id="questionInput" placeholder="Вопрос или термин">
+                <input type="text" id="answerInput" placeholder="Ответ или определение">
+                <button id="addingCard" class="btn-primary">Добавить карточку</button>
+            </div>
+        </section>
+
+        <main class="study-section">
+            <div id="studyArea" class="study-card">
+                <div class="study-header">
+                    <span id="counter">0 / 0</span>
+                    <select id="modeSelect">
+                        <option value="all">Все</option>
+                        <option value="unlearned">Только невыученные</option>
+                    </select>
+                </div>
+                
+                <div id="cardDisplay" class="flashcard-box">Начните обучение</div>
+                
+                <div class="study-controls">
+                    <button id="prevBtn" class="btn-icon">←</button>
+                    <div class="main-actions">
+                        <button id="flipBtn" class="btn-main">Перевернуть</button>
+                        <button id="markLearnedBtn" class="btn-success">Я выучил!</button>
+                    </div>
+                    <button id="nextBtn" class="btn-icon">→</button>
+                </div>
+                <button id="shuffleBtn" class="btn-link">Перемешать колоду</button>
+            </div>
+        </main>
+
+        <section class="table-section">
+            <h3>Список карточек</h3>
+            <div id="table-container"></div>
+        </section>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+:root {
+    --primary: #4a90e2;
+    --secondary: #f3f4f6;
+    --success: #28a745;
+    --danger: #ff4d4f;
+    --text: #333;
+    --shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f2f5;
+    color: var(--text);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+header, .card-creator, .study-card, .table-section {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    margin-bottom: 20px;
+}
+
+header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.input-group { 
+    display: flex; 
+    gap: 10px; 
+}
+.input-group input { 
+    flex: 1; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 6px; 
+}
+
+.btn-primary { 
+    background: var(--primary); 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    transition: 0.2s; 
+}
+.btn-primary:hover { 
+    filter: brightness(1.1); 
+}
+
+.btn-success { 
+    background: var(--success); 
+    color: white; 
+    border: none; 
+    padding: 12px 20px; 
+    border-radius: 25px; 
+    cursor: pointer; 
+    font-weight: bold; 
+}
+
+.study-card { 
+    text-align: center; 
+}
+.study-header { 
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 20px; 
+}
+
+.flashcard-box {
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 2px dashed var(--primary);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fbfcfe;
+}
+
+.study-controls { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 15px; 
+}
+.main-actions { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+.btn-icon { 
+    background: var(--secondary); 
+    border: none; 
+    width: 45px; 
+    height: 45px; 
+    border-radius: 50%; 
+    cursor: pointer; 
+    font-size: 1.2rem; 
+}
+.btn-main { 
+    background: var(--primary); 
+    color: white; 
+    border: none; 
+    padding: 12px 30px; 
+    border-radius: 25px; 
+    font-weight: bold; 
+    cursor: pointer; 
+}
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+}
+th, td { 
+    text-align: left; 
+    padding: 12px; 
+    border-bottom: 1px solid #eee; 
+}
+
+.btn-delete { 
+    color: var(--danger); 
+    border: none; 
+    background: none; 
+    cursor: pointer; 
+    font-weight: 500; 
+}
+.btn-edit { 
+    color: var(--primary); 
+    border: none; 
+    background: none; 
+    cursor: pointer; 
+    font-weight: 500; 
+}
+.btn-delete:hover, .btn-edit:hover { 
+    text-decoration: 
+    underline; 
+}
+
+button:disabled { 
+    opacity: 0.4; 
+    cursor: not-allowed; 
+}
+
+.btn-secondary {
+    background: var(--secondary);
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    color: var(--primary);
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 15px;
+}
